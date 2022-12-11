@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3247B32C2945FDA80093D0CF /* CoreData_One_to_Many_RelationshipsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247B32B2945FDA80093D0CF /* CoreData_One_to_Many_RelationshipsApp.swift */; };
+		3247B32E2945FDA80093D0CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247B32D2945FDA80093D0CF /* ContentView.swift */; };
+		3247B3302945FDA90093D0CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3247B32F2945FDA90093D0CF /* Assets.xcassets */; };
+		3247B3332945FDA90093D0CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3247B3322945FDA90093D0CF /* Preview Assets.xcassets */; };
+		3247B33D2945FDA90093D0CF /* CoreData_One_to_Many_RelationshipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247B33C2945FDA90093D0CF /* CoreData_One_to_Many_RelationshipsTests.swift */; };
+		3247B3472945FDA90093D0CF /* CoreData_One_to_Many_RelationshipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247B3462945FDA90093D0CF /* CoreData_One_to_Many_RelationshipsUITests.swift */; };
+		3247B3492945FDA90093D0CF /* CoreData_One_to_Many_RelationshipsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247B3482945FDA90093D0CF /* CoreData_One_to_Many_RelationshipsUITestsLaunchTests.swift */; };
+		3247B3562945FDBF0093D0CF /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247B3552945FDBF0093D0CF /* DataController.swift */; };
+		3247B3592945FE160093D0CF /* CandyBar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3247B3572945FE160093D0CF /* CandyBar.xcdatamodeld */; };
+		3247B3662945FF8B0093D0CF /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247B3622945FF8B0093D0CF /* Country+CoreDataClass.swift */; };
+		3247B3672945FF8B0093D0CF /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247B3632945FF8B0093D0CF /* Country+CoreDataProperties.swift */; };
+		3247B3682945FF8B0093D0CF /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247B3642945FF8B0093D0CF /* Candy+CoreDataClass.swift */; };
+		3247B3692945FF8B0093D0CF /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247B3652945FF8B0093D0CF /* Candy+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3247B3392945FDA90093D0CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3247B3202945FDA80093D0CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3247B3272945FDA80093D0CF;
+			remoteInfo = "CoreData One-to-Many Relationships";
+		};
+		3247B3432945FDA90093D0CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3247B3202945FDA80093D0CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3247B3272945FDA80093D0CF;
+			remoteInfo = "CoreData One-to-Many Relationships";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3247B3282945FDA80093D0CF /* CoreData One-to-Many Relationships.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreData One-to-Many Relationships.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3247B32B2945FDA80093D0CF /* CoreData_One_to_Many_RelationshipsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData_One_to_Many_RelationshipsApp.swift; sourceTree = "<group>"; };
+		3247B32D2945FDA80093D0CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3247B32F2945FDA90093D0CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3247B3322945FDA90093D0CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3247B3382945FDA90093D0CF /* CoreData One-to-Many RelationshipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreData One-to-Many RelationshipsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3247B33C2945FDA90093D0CF /* CoreData_One_to_Many_RelationshipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData_One_to_Many_RelationshipsTests.swift; sourceTree = "<group>"; };
+		3247B3422945FDA90093D0CF /* CoreData One-to-Many RelationshipsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreData One-to-Many RelationshipsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3247B3462945FDA90093D0CF /* CoreData_One_to_Many_RelationshipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData_One_to_Many_RelationshipsUITests.swift; sourceTree = "<group>"; };
+		3247B3482945FDA90093D0CF /* CoreData_One_to_Many_RelationshipsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData_One_to_Many_RelationshipsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3247B3552945FDBF0093D0CF /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		3247B3582945FE160093D0CF /* CandyBar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CandyBar.xcdatamodel; sourceTree = "<group>"; };
+		3247B3622945FF8B0093D0CF /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3247B3632945FF8B0093D0CF /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		3247B3642945FF8B0093D0CF /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3247B3652945FF8B0093D0CF /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3247B3252945FDA80093D0CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3247B3352945FDA90093D0CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3247B33F2945FDA90093D0CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3247B31F2945FDA80093D0CF = {
+			isa = PBXGroup;
+			children = (
+				3247B32A2945FDA80093D0CF /* CoreData One-to-Many Relationships */,
+				3247B33B2945FDA90093D0CF /* CoreData One-to-Many RelationshipsTests */,
+				3247B3452945FDA90093D0CF /* CoreData One-to-Many RelationshipsUITests */,
+				3247B3292945FDA80093D0CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3247B3292945FDA80093D0CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3247B3282945FDA80093D0CF /* CoreData One-to-Many Relationships.app */,
+				3247B3382945FDA90093D0CF /* CoreData One-to-Many RelationshipsTests.xctest */,
+				3247B3422945FDA90093D0CF /* CoreData One-to-Many RelationshipsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3247B32A2945FDA80093D0CF /* CoreData One-to-Many Relationships */ = {
+			isa = PBXGroup;
+			children = (
+				3247B3622945FF8B0093D0CF /* Country+CoreDataClass.swift */,
+				3247B3632945FF8B0093D0CF /* Country+CoreDataProperties.swift */,
+				3247B3642945FF8B0093D0CF /* Candy+CoreDataClass.swift */,
+				3247B3652945FF8B0093D0CF /* Candy+CoreDataProperties.swift */,
+				3247B32B2945FDA80093D0CF /* CoreData_One_to_Many_RelationshipsApp.swift */,
+				3247B32D2945FDA80093D0CF /* ContentView.swift */,
+				3247B3552945FDBF0093D0CF /* DataController.swift */,
+				3247B3572945FE160093D0CF /* CandyBar.xcdatamodeld */,
+				3247B32F2945FDA90093D0CF /* Assets.xcassets */,
+				3247B3312945FDA90093D0CF /* Preview Content */,
+			);
+			path = "CoreData One-to-Many Relationships";
+			sourceTree = "<group>";
+		};
+		3247B3312945FDA90093D0CF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3247B3322945FDA90093D0CF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3247B33B2945FDA90093D0CF /* CoreData One-to-Many RelationshipsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3247B33C2945FDA90093D0CF /* CoreData_One_to_Many_RelationshipsTests.swift */,
+			);
+			path = "CoreData One-to-Many RelationshipsTests";
+			sourceTree = "<group>";
+		};
+		3247B3452945FDA90093D0CF /* CoreData One-to-Many RelationshipsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3247B3462945FDA90093D0CF /* CoreData_One_to_Many_RelationshipsUITests.swift */,
+				3247B3482945FDA90093D0CF /* CoreData_One_to_Many_RelationshipsUITestsLaunchTests.swift */,
+			);
+			path = "CoreData One-to-Many RelationshipsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3247B3272945FDA80093D0CF /* CoreData One-to-Many Relationships */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3247B34C2945FDA90093D0CF /* Build configuration list for PBXNativeTarget "CoreData One-to-Many Relationships" */;
+			buildPhases = (
+				3247B3242945FDA80093D0CF /* Sources */,
+				3247B3252945FDA80093D0CF /* Frameworks */,
+				3247B3262945FDA80093D0CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoreData One-to-Many Relationships";
+			productName = "CoreData One-to-Many Relationships";
+			productReference = 3247B3282945FDA80093D0CF /* CoreData One-to-Many Relationships.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3247B3372945FDA90093D0CF /* CoreData One-to-Many RelationshipsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3247B34F2945FDA90093D0CF /* Build configuration list for PBXNativeTarget "CoreData One-to-Many RelationshipsTests" */;
+			buildPhases = (
+				3247B3342945FDA90093D0CF /* Sources */,
+				3247B3352945FDA90093D0CF /* Frameworks */,
+				3247B3362945FDA90093D0CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3247B33A2945FDA90093D0CF /* PBXTargetDependency */,
+			);
+			name = "CoreData One-to-Many RelationshipsTests";
+			productName = "CoreData One-to-Many RelationshipsTests";
+			productReference = 3247B3382945FDA90093D0CF /* CoreData One-to-Many RelationshipsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3247B3412945FDA90093D0CF /* CoreData One-to-Many RelationshipsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3247B3522945FDA90093D0CF /* Build configuration list for PBXNativeTarget "CoreData One-to-Many RelationshipsUITests" */;
+			buildPhases = (
+				3247B33E2945FDA90093D0CF /* Sources */,
+				3247B33F2945FDA90093D0CF /* Frameworks */,
+				3247B3402945FDA90093D0CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3247B3442945FDA90093D0CF /* PBXTargetDependency */,
+			);
+			name = "CoreData One-to-Many RelationshipsUITests";
+			productName = "CoreData One-to-Many RelationshipsUITests";
+			productReference = 3247B3422945FDA90093D0CF /* CoreData One-to-Many RelationshipsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3247B3202945FDA80093D0CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					3247B3272945FDA80093D0CF = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					3247B3372945FDA90093D0CF = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 3247B3272945FDA80093D0CF;
+					};
+					3247B3412945FDA90093D0CF = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 3247B3272945FDA80093D0CF;
+					};
+				};
+			};
+			buildConfigurationList = 3247B3232945FDA80093D0CF /* Build configuration list for PBXProject "CoreData One-to-Many Relationships" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3247B31F2945FDA80093D0CF;
+			productRefGroup = 3247B3292945FDA80093D0CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3247B3272945FDA80093D0CF /* CoreData One-to-Many Relationships */,
+				3247B3372945FDA90093D0CF /* CoreData One-to-Many RelationshipsTests */,
+				3247B3412945FDA90093D0CF /* CoreData One-to-Many RelationshipsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3247B3262945FDA80093D0CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3247B3332945FDA90093D0CF /* Preview Assets.xcassets in Resources */,
+				3247B3302945FDA90093D0CF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3247B3362945FDA90093D0CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3247B3402945FDA90093D0CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3247B3242945FDA80093D0CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3247B32E2945FDA80093D0CF /* ContentView.swift in Sources */,
+				3247B3592945FE160093D0CF /* CandyBar.xcdatamodeld in Sources */,
+				3247B3672945FF8B0093D0CF /* Country+CoreDataProperties.swift in Sources */,
+				3247B3692945FF8B0093D0CF /* Candy+CoreDataProperties.swift in Sources */,
+				3247B3562945FDBF0093D0CF /* DataController.swift in Sources */,
+				3247B3662945FF8B0093D0CF /* Country+CoreDataClass.swift in Sources */,
+				3247B32C2945FDA80093D0CF /* CoreData_One_to_Many_RelationshipsApp.swift in Sources */,
+				3247B3682945FF8B0093D0CF /* Candy+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3247B3342945FDA90093D0CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3247B33D2945FDA90093D0CF /* CoreData_One_to_Many_RelationshipsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3247B33E2945FDA90093D0CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3247B3492945FDA90093D0CF /* CoreData_One_to_Many_RelationshipsUITestsLaunchTests.swift in Sources */,
+				3247B3472945FDA90093D0CF /* CoreData_One_to_Many_RelationshipsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3247B33A2945FDA90093D0CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3247B3272945FDA80093D0CF /* CoreData One-to-Many Relationships */;
+			targetProxy = 3247B3392945FDA90093D0CF /* PBXContainerItemProxy */;
+		};
+		3247B3442945FDA90093D0CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3247B3272945FDA80093D0CF /* CoreData One-to-Many Relationships */;
+			targetProxy = 3247B3432945FDA90093D0CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3247B34A2945FDA90093D0CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3247B34B2945FDA90093D0CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3247B34D2945FDA90093D0CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CoreData One-to-Many Relationships/Preview Content\"";
+				DEVELOPMENT_TEAM = 7S5KXF68WA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Arthur.Sh.CoreData-One-to-Many-Relationships";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3247B34E2945FDA90093D0CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CoreData One-to-Many Relationships/Preview Content\"";
+				DEVELOPMENT_TEAM = 7S5KXF68WA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Arthur.Sh.CoreData-One-to-Many-Relationships";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3247B3502945FDA90093D0CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7S5KXF68WA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Arthur.Sh.CoreData-One-to-Many-RelationshipsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreData One-to-Many Relationships.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoreData One-to-Many Relationships";
+			};
+			name = Debug;
+		};
+		3247B3512945FDA90093D0CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7S5KXF68WA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Arthur.Sh.CoreData-One-to-Many-RelationshipsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreData One-to-Many Relationships.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoreData One-to-Many Relationships";
+			};
+			name = Release;
+		};
+		3247B3532945FDA90093D0CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7S5KXF68WA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Arthur.Sh.CoreData-One-to-Many-RelationshipsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CoreData One-to-Many Relationships";
+			};
+			name = Debug;
+		};
+		3247B3542945FDA90093D0CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7S5KXF68WA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Arthur.Sh.CoreData-One-to-Many-RelationshipsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CoreData One-to-Many Relationships";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3247B3232945FDA80093D0CF /* Build configuration list for PBXProject "CoreData One-to-Many Relationships" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3247B34A2945FDA90093D0CF /* Debug */,
+				3247B34B2945FDA90093D0CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3247B34C2945FDA90093D0CF /* Build configuration list for PBXNativeTarget "CoreData One-to-Many Relationships" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3247B34D2945FDA90093D0CF /* Debug */,
+				3247B34E2945FDA90093D0CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3247B34F2945FDA90093D0CF /* Build configuration list for PBXNativeTarget "CoreData One-to-Many RelationshipsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3247B3502945FDA90093D0CF /* Debug */,
+				3247B3512945FDA90093D0CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3247B3522945FDA90093D0CF /* Build configuration list for PBXNativeTarget "CoreData One-to-Many RelationshipsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3247B3532945FDA90093D0CF /* Debug */,
+				3247B3542945FDA90093D0CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3247B3572945FE160093D0CF /* CandyBar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3247B3582945FE160093D0CF /* CandyBar.xcdatamodel */,
+			);
+			currentVersion = 3247B3582945FE160093D0CF /* CandyBar.xcdatamodel */;
+			path = CandyBar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3247B3202945FDA80093D0CF /* Project object */;
+}
